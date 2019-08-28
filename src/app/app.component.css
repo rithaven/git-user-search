@@ -1,0 +1,9 @@
+.back{
+    background-image: url("../assets/one.jpg");
+    color: white;
+   height: 1000px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

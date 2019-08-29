@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Githubservice  } from '@Github-;
+import { Githubservice} from '../Github-service/github-search.service';
 import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-gitsearch',
@@ -11,19 +11,19 @@ export class GitsearchComponent implements OnInit {
   repos: any[];
   userName: string;
   constructor(private githubService: Githubservice , private http: HttpClient) {
-    this.githubService.getUser().subscribe(user => {
+    this.githubService.gitUser().subscribe(user => {
       this.user = user;
     });
-    this.githubService.getRepo().subscribe(repos => {
+    this.githubService.gitRepos().subscribe(repos => {
       this.repos = repos;
     });
   }
   findProfile() {
     this.githubService.updateUser(this.userName);
-    this.githubService.getUser().subscribe(user => {
+    this.githubService.gitRepos().subscribe(user => {
       this.user = user;
     });
-    this.githubService.getRepo().subscribe(repos => {
+    this.githubService.gitRepos().subscribe(repos => {
       this.repos = repos;
     });
   }

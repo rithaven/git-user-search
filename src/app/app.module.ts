@@ -12,7 +12,10 @@ import { AboutComponent } from './about/about.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RoutingComponent } from './routing/routing.component';
 import { RoutingDirective } from './routing.directive';
-
+import { DateCountPipe } from './date-count.pipe';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+// import { HttpClientModule, /* other http imports */ } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,16 +25,19 @@ import { RoutingDirective } from './routing.directive';
     NotFoundComponent,
     RoutingComponent,
     RoutingDirective,
-    Githubservice
+    // Githubservice,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+    NgProgressHttpClientModule,
+    HttpModule,
+    FormsModule
   ],
-  providers: [Githubservice],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

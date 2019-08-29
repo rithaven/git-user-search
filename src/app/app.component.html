@@ -1,41 +1,27 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <ng-progress></ng-progress>
 <div class="back">
-<nav progress="nav navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-toggler" href="#">Github User lookup</a>
-  <button class="navbar-toggler" type="button" datatoggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle vavigation">
-    
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" routerLink='/' routerLinkActive='active'>Home <span class="sr-only"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink='/about' routerLinkActive='active'>About</a>
-      </li>
-    </ul>
-  </div>
-  </nav>
-  <div style="text-align:right;padding-top:50px;padding-right: 500px;" >
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="../assets/search.jpeg">
-<!-- <h2>Here are some links to help you start: </h2> -->
-<!-- <ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul> -->
-</div>
-<!-- <app-gitsearch></app-gitsearch> -->
+  <nav progress="nav navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-toggler" href="#">Github User lookup</a>
+    <button class="navbar-toggler" type="button" datatoggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle vavigation">
 
-<app-gitsearch></app-gitsearch>
-<router-outlet></router-outlet>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/' routerLinkActive='active'>Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/about' routerLinkActive='active'>About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div style="text-align:right;padding-top:50px;padding-right: 500px;">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+    <img width="300" alt="hound dog" src="../assets/search.jpeg">
+  </div>
+  <app-gitsearch></app-gitsearch>
+  <router-outlet></router-outlet>

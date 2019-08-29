@@ -1,24 +1,37 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GoalFormComponent } from './goal-form/goal-form.component';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { Githubservice } from './Github-service/github-search.service';
+import { HttpClientModule } from '@angular/common/http';
 import { GitsDetailComponent } from './gits-detail/gits-detail.component';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
+import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { RoutingComponent } from './routing/routing.component';
+import { RoutingDirective } from './routing.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoalFormComponent,
     GitsDetailComponent,
-    GitsearchComponent
+    GitsearchComponent,
+    AboutComponent,
+    NotFoundComponent,
+    RoutingComponent,
+    RoutingDirective,
+    Githubservice
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
   ],
-  providers: [],
+  providers: [Githubservice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

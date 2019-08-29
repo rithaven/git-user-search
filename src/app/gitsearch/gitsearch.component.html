@@ -1,1 +1,33 @@
-<app-gits-detail></app-gits-detail>
+<div class="bordwer container searchPadding">
+    <form action="">
+        <div class="form-group">
+            <label>Search Github user Names</label>
+            <input type="text" class="form-control" placeholder="Search Github" [[ngModel]]="userName" name="userName"
+                (keyup)="findProfile()">
+
+        </div>
+    </form>
+</div>
+<br>
+<div class="topPadding container border" *ngIf="user">
+
+    <div class="card">
+        <h5 class="card-header">{{user.name}} <small>{{user.login}}</small></h5>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{user.avatar_url}}" class="img-thumbnail img-fluid">
+                    <hr>
+                    <a href="{{user.html_url}}" class="btn btn-outline-success btn-block" target="_blank"> GitHub
+                        Profile</a>
+
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-6">
+
+                    <span class="badge badge-primary">{{user.followers}} Followers</span>
+                    <span class="badge badge-secondary">{{user.following}} Following</span>
+                    <span class="badge badge-success">{{user.public_gists}} Public Gists</span>
+                    <span class="badge badge-info">{{user.public_repos}} Public Repos</span>
+                    <hr>
+

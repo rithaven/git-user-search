@@ -30,12 +30,11 @@
                     <span class="badge badge-success">{{user.public_gists}} Public Gists</span>
                     <span class="badge badge-info">{{user.public_repos}} Public Repos</span>
                     <hr>
-                    <div card>
-                        <ul class="card">
-                            <li class="list-group list-group-flush"></li>
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
                             <li class="list-group-item" *ngIf="user.name">Name: {{user.name}}</li>
-                            <li class="list-group-item" *ngIf="user.location">Lives in: {{user.location}}</li>
-                            <li class="list-group-item" *ngIf="user.blog">Blog: {{user.blog}}</li>
+                            <li class="list-group-item" *ngIf="user.createddate">Lives in: {{user.createddate}}</li>
+                            <li class="list-group-item" *ngIf="user.login">Blog: {{user.login}}</li>
                             <li class="list-group-item" *ngIf="user.company">Company {{user.company}}</li>
                             
                         </ul>

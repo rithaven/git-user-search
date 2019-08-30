@@ -13,7 +13,7 @@ export class Githubservice {
 
   private userName = 'rithaven';
 
-  private clientSecret = '2fa8adc71c27171a596733b3842e734fd097957b';
+  private clientSecret = 'e52f2d44d1a5846fb00ee9707afdc60ac9f00999';
   constructor(private _http: Http) {
 
   }

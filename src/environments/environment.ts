@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  clientSecret: '2fa8adc71c27171a596733b3842e734fd097957b'
+  clientSecret: 'e52f2d44d1a5846fb00ee9707afdc60ac9f00999',
+  userName : 'rithaven'
 };
 
 /*

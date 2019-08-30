@@ -11,7 +11,7 @@ import { Gitsearch } from '../gitsearch';
 export class GitsearchComponent implements OnInit {
   user: any[];
   repos: any[];
-  userName: 'rithaven';
+  userName: string;
   clientSecret: string;
   gitsearch: Gitsearch;
 
@@ -36,12 +36,12 @@ export class GitsearchComponent implements OnInit {
   ngOnInit() {
     interface ApiResponse {
       name: string;
-      createddate: Date;
+      created_at: Date;
       login: string;
     }
     this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName + '?access_token='
     + '&client_secret=' + this.clientSecret).subscribe(data => {
-    this.gitsearch = new Gitsearch (data.name, data.createddate, data.login);
+    this.gitsearch = new Gitsearch (data.name, data.created_at, data.login);
 
     });
 

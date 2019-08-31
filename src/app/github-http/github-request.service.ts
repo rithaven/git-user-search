@@ -10,9 +10,9 @@ import 'rxjs/add/operator/map';
 
 export class Githubservice {
 
-  private userName = 'rithaven';
-  private clientId = 'rithaven';
-  private clientSecret = 'e52f2d44d1a5846fb00ee9707afdc60ac9f00999';
+  private userName = 'nnn';
+  private clientId = 'rnnnnn';
+  private clientSecret = '5fa414b89dede5dfabc60abb9931c50d6409f5c0';
 
   constructor(private _http: Http) {
 

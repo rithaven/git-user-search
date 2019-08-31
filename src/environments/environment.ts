@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  clientSecret: 'e52f2d44d1a5846fb00ee9707afdc60ac9f00999',
+  clientSecret: '8106774204ff8407d1d40e48be8c20e4a0faf5a3',
   userName : 'rithaven'
 };
 

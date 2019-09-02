@@ -31,6 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## lIVE SITE:
 https://rithaven.github.io/git-user-search/
 
-**for more information don't hesitate: contact me on veneruth4@gmail.com
+**for more information don't hesitate: contact me on veneruth4@gmail.com**
 ## LICENSE
-**This project is under moringa-school,License_Copyright(c)Ritha v. KANKINDI
+**This project is under moringa-school,License_Copyright(c)Ritha v. KANKINDI**

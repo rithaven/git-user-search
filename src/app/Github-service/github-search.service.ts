@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
-import { environment } from 'src/environments/environment.prod';
+
 
 
 
@@ -13,7 +13,7 @@ export class Githubservice {
 
   private userName = 'rithaven';
 
-  private clientSecret = '45305f4a6a3da4c43c2c652c7dc6278433ed4ee8';
+  private clientSecret = 'bb4dc813751930bba4a9830e2a3f49d19abc08c2';
   constructor(private _http: Http) {
 
   }

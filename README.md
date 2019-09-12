@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) 
 by:
- ## 
+ ## KANKINDI RITHA VENERANDA        ON September 1,2019
 
 
 ## Development server

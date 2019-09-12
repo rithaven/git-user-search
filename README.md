@@ -33,4 +33,3 @@ https://rithaven.github.io/git-user-search/
 
 **for more information don't hesitate: contact me on veneruth4@gmail.com**
 ## LICENSE
-**This project is under moringa-school,License_Copyright(c)Ritha v. KANKINDI**
